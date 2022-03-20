@@ -1,0 +1,12 @@
+commandlinetools-*latest.zip
+
+.knownPackages
+.temp/*
+build-tools/*
+cmdline-tools/*
+emulator/*
+licenses/*
+patcher/*
+platform-tools/*
+platforms/*
+system-images/*
