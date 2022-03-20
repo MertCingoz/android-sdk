@@ -36,10 +36,10 @@ cd C:\Users\Cngz\git\_scorp\.playground\android-sdk\.scripts
 init.bat
 ```
 
-- Set PATH (macOS)
+- Set PATH (linux, macOS)
 ```
-cd .playground/android-sdk/.scripts
-sh init.sh
+cd /Users/mertcingoz/Documents/git/scorp/.playground/android-sdk/.scripts
+. ./init.sh
 ```
 
 - List packages
@@ -68,7 +68,7 @@ sdkmanager "system-images;android-Tiramisu;google_apis;x86_64"
 - Install patforms for Android
 ```
 sdkmanager "platforms;android-19"
-sdkmanager"platforms;android-21"
+sdkmanager "platforms;android-21"
 sdkmanager "platforms;android-22"
 sdkmanager "platforms;android-23"
 sdkmanager "platforms;android-24"
