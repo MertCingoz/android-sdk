@@ -26,19 +26,19 @@ $ANDROID_SDK_ROOT/
 
 - Set PATH (Windows cmd shortcut)
 ```
-wt.exe -w 0 cmd /k "cd C:\Users\Cngz\git\_scorp\.playground\android-sdk\.scripts && init.bat"
+wt.exe -w 0 cmd /k "cd C:\Users\Cngz\git\playground\android-sdk\.scripts && init.bat"
 ```
 
 - Set PATH (Windows cmd)
 ```
 start cmd
-cd C:\Users\Cngz\git\_scorp\.playground\android-sdk\.scripts
+cd C:\Users\Cngz\git\playground\android-sdk\.scripts
 init.bat
 ```
 
 - Set PATH (linux, macOS)
 ```
-cd /Users/mertcingoz/Documents/git/scorp/.playground/android-sdk/.scripts
+cd /Users/mertcingoz/Documents/git/playground/android-sdk/.scripts
 . ./init.sh
 ```
 
@@ -85,7 +85,7 @@ sdkmanager "platforms;android-Tiramisu"
 
 - Install emulator and tools
 ```
-sdkmanager "emulator" "platform-tools" "build-tools;32.0.0"
+sdkmanager "emulator" "platform-tools" "build-tools;34.0.0"
 ```
 
 - Create emulator device
