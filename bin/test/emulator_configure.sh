@@ -1,4 +1,7 @@
-. ./init.sh
+#!/usr/bin/env sh
+set -o errexit -o nounset
+
+. ./bin/test/init.sh
 
 adb -s emulator-$1 reverse tcp:4566 tcp:4566
 adb -s emulator-$1 reverse tcp:8000 tcp:8000
