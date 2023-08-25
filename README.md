@@ -1,6 +1,7 @@
 # Android Emulator without Android Studio
 
 - [Download](https://developer.android.com/studio#command-line-tools-only) Command line tools only
+- Also check https://gist.github.com/mrk-han/66ac1a724456cadf1c93f4218c6060ae
 
 **Directory Structure**
 ```
