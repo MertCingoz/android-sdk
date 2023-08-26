@@ -23,15 +23,11 @@ $ANDROID_SDK_ROOT/
 |   └─ android-34/
 ```
 
-- Set PATH
+- Set PATH and use sdk tools
 ```
 . ./bin/init.sh
-```
-
-- List packages
-```
 sdkmanager --list
-avdmanager list
+#avdmanager list
 ```
 
 - Install packages for Android
@@ -41,13 +37,12 @@ bin/install.sh android-34 google_apis_playstore arm64-v8a
 
 - Restart adb
 ```
-adb kill-server
-adb start-server
+bin/restart.sh
 ```
 
 - Start emulator
 ```
-emulator -avd android-34
+bin/start.sh android-34
 ```
 
 - Real Device
