@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -o errexit -o nounset
 
-. ./bin/init.sh
+source bin/init.sh
 
 sdkmanager "system-images;$1;$2;$3"
 sdkmanager "platforms;$1"

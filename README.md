@@ -25,7 +25,7 @@ $ANDROID_SDK_ROOT/
 
 - Set PATH and use sdk tools
 ```
-. ./bin/init.sh
+source bin/init.sh
 sdkmanager --list
 #avdmanager list
 ```
