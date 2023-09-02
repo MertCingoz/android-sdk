@@ -3,8 +3,7 @@ set -o errexit -o nounset
 
 source bin/init.sh
 
-sdkmanager "system-images;$1;$2;$3"
-sdkmanager "platforms;$1"
+echo 'y' | sdkmanager "platforms;$1" "system-images;$1;$2;$3"
 avdmanager --verbose create avd --force \
     --package "system-images;$1;$2;$3" \
     --name "$1" \

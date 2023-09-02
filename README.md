@@ -8,10 +8,16 @@
 $ANDROID_SDK_ROOT/
 ├── bin/
 ├── cmdline-tools/
-|   └── bin/
-|       ├── avdmanager
-|       ├── sdkmanager
-|       ├── ...
+|   └── tools/
+|   |   └── bin/
+|   |       ├── avdmanager
+|   |       ├── sdkmanager
+|   |       ├── ...
+|   └── latest/
+|       └── bin/
+|           ├── avdmanager
+|           ├── sdkmanager
+|           ├── ...
 |── emulator/
 |── platforms/
 |   └─ android-34/
@@ -23,11 +29,16 @@ $ANDROID_SDK_ROOT/
 |   └─ android-34/
 ```
 
-- Set PATH and use sdk tools
+
+- Download and call init.sh to set PATH for SDK
 ```
+bin/download.sh
+
 source bin/init.sh
+
 sdkmanager --list
-#avdmanager list
+sdkmanager --update
+avdmanager list
 ```
 
 - Install packages for Android
@@ -43,6 +54,7 @@ bin/restart.sh
 - Start emulator
 ```
 bin/start.sh android-34
+bin/start.sh android-34 -no-boot-anim -debug init,metrics -timezone Europe/Paris
 ```
 
 - Real Device

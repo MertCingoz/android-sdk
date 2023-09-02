@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -o errexit -o nounset
 
-. ./bin/test/init.sh
+source bin/init.sh
 
 adb devices
 appium
