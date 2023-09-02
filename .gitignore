@@ -1,6 +1,6 @@
 .DS_Store
 
-commandlinetools-*latest.zip
+commandlinetools-*_latest.zip
 
 .knownPackages
 .temp/*
@@ -12,4 +12,3 @@ patcher/*
 platform-tools/*
 platforms/*
 system-images/*
-tools/*
