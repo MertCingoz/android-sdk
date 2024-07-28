@@ -9,4 +9,4 @@ export "PATH=$PATH:$ANDROID_SDK_ROOT/emulator"
 export "PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
 sdkmanager --update
-echo 'y' | sdkmanager "cmdline-tools;latest" "emulator" "platform-tools" "build-tools;34.0.0" > /dev/null
+echo 'y' | sdkmanager "cmdline-tools;latest" "emulator" "platform-tools" "build-tools;35.0.0" > /dev/null

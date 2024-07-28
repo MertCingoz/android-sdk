@@ -43,7 +43,8 @@ avdmanager list
 
 - Install packages for Android
 ```
-bin/install.sh android-34 google_apis_playstore arm64-v8a
+bin/install.sh android-35 google_apis_playstore arm64-v8a
+bin/install.sh android-VanillaIceCream google_apis_playstore arm64-v8a
 ```
 
 - Restart adb
@@ -53,8 +54,10 @@ bin/restart.sh
 
 - Start emulator
 ```
-bin/start.sh android-34
-bin/start.sh android-34 -no-boot-anim -debug init,metrics -timezone Europe/Paris
+bin/start.sh android-35
+bin/start.sh android-35 -no-boot-anim -debug init,metrics -timezone Europe/Paris
+
+bin/start.sh android-VanillaIceCream
 ```
 
 - Real Device
