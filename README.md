@@ -7,26 +7,29 @@
 ```
 $ANDROID_SDK_ROOT/
 ├── bin/
+├── build-tools/
+|   └── 35.0.0/
 ├── cmdline-tools/
-|   └── tools/
+|   └── latest/
 |   |   └── bin/
 |   |       ├── avdmanager
 |   |       ├── sdkmanager
 |   |       ├── ...
-|   └── latest/
+|   └── tools/
 |       └── bin/
 |           ├── avdmanager
 |           ├── sdkmanager
 |           ├── ...
 |── emulator/
-|── platforms/
-|   └─ android-34/
+|── licenses/
 |── platform-tools/
 |   ├─ adb
 |   ├─ fastboot
 |   ├─ ...
+|── platforms/
+|   └─ android-35/
 |── system-images/
-|   └─ android-34/
+|   └─ android-35/
 ```
 
 
@@ -44,7 +47,6 @@ avdmanager list
 - Install packages for Android
 ```
 bin/install.sh android-35 google_apis_playstore arm64-v8a
-bin/install.sh android-VanillaIceCream google_apis_playstore arm64-v8a
 ```
 
 - Restart adb
@@ -55,9 +57,7 @@ bin/restart.sh
 - Start emulator
 ```
 bin/start.sh android-35
-bin/start.sh android-35 -no-boot-anim -debug init,metrics -timezone Europe/Paris
-
-bin/start.sh android-VanillaIceCream
+bin/start.sh android-35 -no-boot-anim -debug init,metrics -timezone Europe/Warsaw
 ```
 
 - Real Device
