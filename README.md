@@ -34,30 +34,34 @@ $ANDROID_SDK_ROOT/
 
 
 - Download and call init.sh to set PATH for SDK
-```
+```sh
 bin/download.sh
-
+```
+```sh
 source bin/init.sh
-
+```
+```sh
 sdkmanager --list
 sdkmanager --update
 avdmanager list
 ```
 
 - Install packages for Android
-```
-bin/install.sh android-35 google_apis_playstore arm64-v8a
+```sh
+bin/install.sh tv_4k android-35 google_apis_playstore arm64-v8a
 ```
 
 - Restart adb
-```
+```sh
 bin/restart.sh
 ```
 
 - Start emulator
+```sh
+bin/start.sh tv_4k
 ```
-bin/start.sh android-35
-bin/start.sh android-35 -no-boot-anim -debug init,metrics -timezone Europe/Warsaw
+```sh
+bin/start.sh tv_4k -no-boot-anim -debug init,metrics -timezone Europe/Warsaw
 ```
 
 - Real Device
