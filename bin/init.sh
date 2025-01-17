@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-set -o errexit -o nounset
+set -o nounset
 
 export "ANDROID_HOME=$PWD"
 export "ANDROID_SDK_ROOT=$PWD"
