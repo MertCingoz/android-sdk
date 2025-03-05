@@ -8,7 +8,7 @@
 $ANDROID_SDK_ROOT/
 ├── bin/
 ├── build-tools/
-|   └── 35.0.0/
+|   └── 35.0.1/
 ├── cmdline-tools/
 |   └── latest/
 |   |   └── bin/
