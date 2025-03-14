@@ -8,7 +8,7 @@
 $ANDROID_SDK_ROOT/
 ├── bin/
 ├── build-tools/
-|   └── 35.0.1/
+|   └── 36.0.0/
 ├── cmdline-tools/
 |   └── latest/
 |   |   └── bin/
@@ -27,9 +27,9 @@ $ANDROID_SDK_ROOT/
 |   ├─ fastboot
 |   ├─ ...
 |── platforms/
-|   └─ android-35/
+|   └─ android-36/
 |── system-images/
-|   └─ android-35/
+|   └─ android-36/
 ```
 
 
@@ -48,7 +48,7 @@ avdmanager list
 
 - Install packages for Android
 ```sh
-bin/install.sh tv_4k android-35 google_apis_playstore arm64-v8a
+bin/install.sh tv_4k android-36 google_apis_playstore arm64-v8a
 ```
 
 - Restart adb
