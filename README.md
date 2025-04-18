@@ -64,6 +64,11 @@ bin/start.sh tv_4k
 bin/start.sh tv_4k -no-boot-anim -debug init,metrics -timezone Europe/Warsaw
 ```
 
+- Debloat
+```sh
+bin/debloat.sh
+```
+
 - Real Device
 ```
 Enable Developer Mode
