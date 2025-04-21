@@ -19,6 +19,8 @@ eshell pm list packages -d
 #eshell pm clear --cache-only <package_name>
 #eshell pm disable <package_name>
 #eshell pm disable-user --user 0 <package_name>
+#eshell pm uninstall <package_name>
+#eshell pm uninstall --user 0 <package_name>
 #eshell kill [options] <package_name>
 #eshell ps
 #eshell kill [options] <pid>
@@ -26,9 +28,6 @@ eshell pm list packages -d
 disable() {
  eshell am force-stop $1
  eshell pm clear $1
- eshell pm disable-user --user 0 $1 || true
- eshell pm uninstall $1 || true
- eshell pm uninstall --user 0 $1 || true
  eshell pm disable-user --user 0 $1 || true
 }
 
