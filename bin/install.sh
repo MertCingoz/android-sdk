@@ -9,3 +9,5 @@ avdmanager --verbose create avd --force \
   --name "$1" \
   --abi "$4" \
   --device "$1"
+
+sed -i '' 's/^hw\.keyboard=no/hw.keyboard=yes/' "$HOME/.android/avd/$1.avd/config.ini"
